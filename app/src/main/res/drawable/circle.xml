@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"><!--被按下时-->
+        <shape
+            android:shape= "oval"
+            android:useLevel= "false"
+            >
+
+            <solid android:color="@color/lightgray" />
+
+            <stroke
+
+                android:width= "1dp"
+
+                android:color= "@color/gray" />
+
+            <size android:width= "20dp"
+
+                android:height= "20dp" />
+
+        </shape>
+    </item>
+    <item><!--最后一个item不设置state_pressed时表示所有其他状态(只有在最后才能不写state_pressed不然之后的item会被忽略)-->
+        <shape
+            android:shape= "oval"
+            android:useLevel= "false">
+            <solid android:color="@color/white"/>
+            <stroke
+                android:width= "1dp"
+                android:color= "@color/gray" />
+
+            <size android:width= "20dp"
+                android:height= "20dp" />
+
+        </shape>
+    </item>
+</selector>
+
+
+
+
